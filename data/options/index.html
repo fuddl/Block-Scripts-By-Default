@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+  <link href="chrome://global/skin/in-content/common.css" rel="stylesheet" type="text/css" />
+  <link href="chrome://global/skin/textbox.css" rel="stylesheet" type="text/css" />
+  <title>Options :: Whitelist JavaScript</title>
+</head>
+<body style="background: white">
+  <h2>
+    <select id="list_type">
+     <option value="whitelist">Whitelist</option>
+     <option value="blacklist">Blacklist</option>
+    </select>
+  </h2>
+  <div>
+    <button id="delete_hosts">Delete All</button>
+    <button id="export_hosts">Export</button><br/>    
+    Import: <input type="file" id="import_hosts">
+  </div>
+
+  <!-- <button id="fill">Fill</button><br/>  -->
+  <div>
+   <input class="textbox-input" type="text" name="search" id="search" placeholder='Search'/>
+  </div>
+ 
+  <table style="width: 100%">
+    <thead>
+      <tr><th><span id="domain_qty"></span>Domains</th><th>Wildcard</th><th>Action</th></tr>
+      <tr>
+	<th>
+    <input type="text" name="host" id="host" style="width: 100%; box-sizing: border-box;"/></th>
+	<th style="width: 10%">
+        <select id="wild" style="width: 100%; box-sizing: border-box;">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+        </th>
+        <th style="width: 10%"><button id="add_host" style="width: 100%; box-sizing: border-box;">Add</button></th></tr>      
+   </thead>
+   <tbody id="tbody">
+   </tbody>
+  </table>
+  <script src="js/options.js"></script>
+</body>
+</html>

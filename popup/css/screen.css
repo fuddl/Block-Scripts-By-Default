@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body { 
+ padding: 10px;
+ background-color: #ddd;
+ margin: 8px 13px 8px 13px;
+}
+
+h1 {
+  font-size: small
+}
+
+button {
+  cursor:pointer;
+  background-color:#aaa;
+  min-width:100px;
+  text-align:center;
+ }
+
+#list input{
+  color:red;
+}
